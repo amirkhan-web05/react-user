@@ -11,3 +11,155 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.form {
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+.dark-mode {
+  background-color: #292c35;
+  color: #fff;
+}
+
+.dark-mode thead {
+  background-color: #292c35;
+  color: #fff;
+}
+
+.dark-mode tr {
+  background-color: #292c35;
+  color: #fff;
+}
+
+.toggle-active {
+  background-color: #000 !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.form-theme {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.form-theme-input {
+  width: 100px !important;
+  height: 50px !important;
+  cursor: pointer !important;
+}
+
+.form-input {
+  width: 30%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.tbody {
+  border: 1px solid #ccc !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+
+.number {
+  padding: 5px 15px;
+  border-radius: 10%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  text-decoration: underline !important;
+}
+
+.card-items {
+  width: 100%;
+  max-width: 100%;
+}
+
+.heart {
+  width: 30px;
+}
+
+.reviews__images {
+  width: 150px;
+}
+
+.reviews {
+  margin-left: -14px;
+}
+
+.card-price__item {
+  color: rgb(199, 18, 199);
+  font-weight: bold;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-items__images {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.card-subtitle {
+  text-decoration: line-through;
+}
+
+.btn__cart {
+  padding: 7px 12px;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  background-color: #8f13ab !important;
+}
+
+.installment {
+  width: 150px;
+  margin: 15px 0;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 5px;
+  font-weight: bold;
+  background: linear-gradient(
+    255deg,
+    #1f005c,
+    #5b0060,
+    #870160,
+    #ac255e,
+    #ca485c,
+    #e16b5c,
+    #f39060,
+    #ffb56b
+  );
+}
+
+.table_user {
+  display: none;
+}
+
+.list {
+  cursor: pointer;
+}
+
+.list__item:last-child {
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.list__item {
+  text-decoration: underline;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.form-input {
+  outline: none;
+}
+
+.bg-light {
+  background-color: #d4d4d4 !important;
+}
