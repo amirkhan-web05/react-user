@@ -4,17 +4,8 @@ import { TypeUserItem } from '../types'
 import { Loader } from '../components/Loader'
 import { UserList } from '../components/UserList'
 import { Pagination } from '../components/Pagination'
-import { useTypedSelector } from '../hooks/useTypedSelector'
-import { Link, Navigate, useLocation } from 'react-router-dom'
 
 export const Home:React.FC = () => {  
-  const auth = useTypedSelector((state) => state.auth.auth)
-  const location = useLocation()
-
-  if (!auth) {
-    <Navigate to='/login' state={{from:location}}/>
-  }
-
   const [users, setUsers] = React.useState<TypeUserItem[]>([])
   const [loaded, setLoaded] = React.useState<boolean>(true)
   const [value, setValue] = React.useState<string>('')
@@ -76,7 +67,7 @@ export const Home:React.FC = () => {
   return (
     <>
     
-    {auth ? <div className='container'>
+    <div className='container'>
       <div className="form-check form-switch form-theme">
         <input 
           onClick={() => darkMode === false ? setDarkMode(true) : setDarkMode(false)} 
@@ -110,8 +101,8 @@ export const Home:React.FC = () => {
           />
         </div>
       </div>
-    </div> : <h3 className='text-center mt-5'>Сначала нужно <Link to='/login'>Авторизаваться</Link></h3>}
-    
+    </div>
+
     </>
   )
 }

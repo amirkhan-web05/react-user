@@ -65,7 +65,7 @@ export const UserList:React.FC<TypeUserItemsArray> = ({users, onRemoveItem}) => 
               <tr key={index}>
                 {item.event ? (
                   <>
-                    <td>{new Date(item.ctime).toLocaleDateString()} &nbsp;{new Date(item.ctime).getUTCHours()} : {new Date(item.ctime).getMinutes()}</td>
+                    <td>{new Date().toLocaleDateString()} &nbsp;{new Date().getHours()} : {new Date().getMinutes()}</td>
                     <td>{item.event}</td>
                   </>
                 ) : (

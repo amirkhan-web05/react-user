@@ -11,7 +11,7 @@ export const UserItems:React.FC<IRemoveUser> = ({id, name, role, ctime, onRemove
       <th scope="row">{id}</th>
       <td>{name}</td>
       <td>{role}</td>
-      <td>{new Date(ctime).toLocaleDateString()} &nbsp;{new Date(ctime).getUTCHours()}:{new Date(ctime).getMinutes()}</td>
+      <td>{new Date().toLocaleDateString()} &nbsp;{new Date().getHours()}:{new Date().getMinutes()}</td>
       <td>
         <button onClick={() => onRemove(id)} className='btn btn-danger'>Удалить</button>
       </td>
