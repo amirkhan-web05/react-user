@@ -24,7 +24,7 @@ const iPhone:TypeCartItems[] = [
 export const ShopPages:React.FC = () => {
   return (
     <div className='container'>
-      <div className="d-flex justify-content-between mt-5 align-items-center">
+      <div className="d-flex justify-content-between mt-5 mb-5 align-items-center">
         <CartList card={iPhone}/>
       </div>
     </div>
